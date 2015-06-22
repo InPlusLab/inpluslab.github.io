@@ -13,6 +13,11 @@ var item6 = Getid("item6");
 var item7 = Getid("item7");
 var item8 = Getid("item8");
 var item9 = Getid("item9");
+var item10 = Getid("item10");
+var item11 = Getid("item11");
+var item12 = Getid("item12");
+var item13 = Getid("item13");
+
 var H = 0;
 var Y = sidebar;
 var nh = 0;
@@ -35,6 +40,11 @@ var ItemActive = function(item) {
 	item7.className = "list-group-item";
 	item8.className = "list-group-item";
 	item9.className = "list-group-item";
+	item10.className = "list-group-item";
+	item11.className = "list-group-item";
+	item12.className = "list-group-item";
+	item13.className = "list-group-item";
+
 	switch(item) {
 		case item1:
 			item1.className = "list-group-item active";
@@ -63,6 +73,18 @@ var ItemActive = function(item) {
 		case item9:
 			item9.className = "list-group-item active";
 			break;
+		case item10:
+			item10.className = "list-group-item active";
+			break;
+		case item11:
+			item11.className = "list-group-item active";
+			break;
+		case item12:
+			item12.className = "list-group-item active";
+			break;
+		case item13:
+			item13.className = "list-group-item active";
+			break;
 	}
 };
 
@@ -81,7 +103,15 @@ window.onscroll = function() {
 		sidebar.className = "col-lg-3 col-md-3 col-xs-3 col-sm-3 sidebar-offcanvas";
 		sidebar.style.top = "0px";
 	};
-	if (s < Getid("title8").offsetTop) {
+	if (s < Getid("title12").offsetTop) {
+		ItemActive(item13);
+	} else if (s > Getid("title12").offsetTop && s < Getid("title11").offsetTop) {
+		ItemActive(item12);
+	} else if (s > Getid("title11").offsetTop && s < Getid("title10").offsetTop) {
+		ItemActive(item11);
+	} else if (s > Getid("title10").offsetTop && s < Getid("title9").offsetTop) {
+		ItemActive(item10);
+	} else if (s > Getid("title9").offsetTop && s < Getid("title8").offsetTop) {
 		ItemActive(item9);
 	} else if (s > Getid("title8").offsetTop && s < Getid("title7").offsetTop) {
 		ItemActive(item8);
@@ -130,6 +160,18 @@ var Goto = function(item) {
 			break;
 		case item9:
 			window.scrollTo(0, Getid("title9").offsetTop);
+			break;
+		case item10:
+			window.scrollTo(0, Getid("title10").offsetTop);
+			break;
+		case item11:
+			window.scrollTo(0, Getid("title11").offsetTop);
+			break;
+		case item12:
+			window.scrollTo(0, Getid("title12").offsetTop);
+			break;
+		case item13:
+			window.scrollTo(0, Getid("title13").offsetTop);
 			break;
 	}
 };
