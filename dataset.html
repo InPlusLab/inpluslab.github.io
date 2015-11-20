@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    	<meta http-equiv="content-type" content="text/html">
+    	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+    	<link rel="icon" href="./img/icon.jpg">
+
+	    <title>TPL Dataset</title>
+	    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	    <link href="./css/font-awesome.min.css" rel="stylesheet">
+	    <script>
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64368264-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+
+	<body>
+  		<div class="container" style="padding-top:50px;margin-bottom:-1%">
+  			<div class="col-md-5" style="text-align:justify;padding-left:20%;padding-top:1%">
+	    		<h3 style="color:#">TPL Dataset</h3>
+	    		<p style="color:#A9A9A9">Third-Party Library Dataset</p>
+	    	</div>
+	    	<div class="col-md-5 col-md-offset-2">
+		    	<div class="col-md-3 col-md-offset-1" style="padding-left:0%;padding-top:-3%">
+					<img src="./img/dataset/sysulogo.jpg" width="100px">
+		    	</div>
+		    	<div class="col-md-2" style="padding-top:7%">
+					<img src="./img/logo.jpg" width="80px">
+		    	</div>
+	    	</div>
+	    </div>
+
+	    <div class="container" style="padding-top:20px">
+	    	<div class="col-md-8 col-md-offset-2" style="text-align:justify">
+	    		<div style="height:30px;background-color:#A9A9A9;width:%">
+	        		<h3 style="padding-top:6px;padding-left:30px;color:white;font-size:18px">Description</h3>
+				</div>
+				<div style="padding-top:20px;padding-left:30px;padding-right:30px;padding-bottom:20px;background-color:#F5F5F5">
+					<p>The dataset is part of Guanhong Tao's Master research work under the supervision of Prof. <a href="http://www.zibinzheng.com">Zibin Zheng</a>. The main purpose of publishing the third-party library dataset is to offer real-world data for feature research. Our dataset is freely available for research purposes.</p></br>
+					<p>We crawled 10148 apps from Android markets and automaticly unpack them with <a href="http://ibotpeaches.github.io/Apktool/">Apktool</a>. Third-party libraries are searched by traversaling every folder in the app and we obtain 352 libraries neglecting those with few usage.</p></br>
+					<p>The dataset includes 10148 apps and 352 libraries. Each row of the app-lib matrix represents the libraries adopted by the current app. The adoption range is {0, 1}. If an app i adopts a library j, then the value is set 1 at the corresponding position (i, j), and otherwise it is 0.</p></br>
+					<p>The TPL dataset includes:</p>
+					<ol>
+						<li><B>README.txt</B> (1KB): Descriptions of the dataset.</li>
+						<li><B>applist.txt</B> (231KB): Package names of apps.</li>
+						<li><B>liblist.txt</B> (7KB): Names of third-party libraries.</li>
+						<li><B>app_lib.csv</B> (6977KB): 10148*352 app-lib matrix in CSV format.</li>
+					</ol></br>
+					<p>Download from <a href="./files/TPL.zip">here</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<hr style="margin-top:4%;margin-left:35%;margin-right:35%">
+
+	    <footer class="bs-docs-footer" role="contentinfo" style="padding-top:10px;padding-bottom:20px">
+	    	<div class="container" style="text-align:center">
+  				<p style="font-size:13px;color:#888">Copyright &copy; 2015-2016 In<sup>+</sup> Lab. All Rights Reserved.</p>
+				<p style="font-size:13px;color:#888">Room d203, South Laboratory Building, East Campus</p>
+				<p style="font-size:13px;color:#888">Sun Yat-sen University, Guangzhou, 510006</p>
+		  	</div>
+		</footer>
+
+	    <script src="./js/bootstrap.min.js"></script>
+	    <script src="./js/navbar.js"></script>
+	    <script src="./js/statistics.js"></script>
+	</body>
+</html>
